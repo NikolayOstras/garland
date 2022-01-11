@@ -1,0 +1,209 @@
+.body{
+    max-height: vh;
+    box-sizing: padding-box;
+}
+#settings input[type=range] {
+    -webkit-appearance: none;
+    border: 3px solid #24ccff;
+    cursor: pointer;
+}
+#settings input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #000000;
+    width: 15px;
+    height: 15px;
+    background: #000;
+    cursor: pointer;
+}
+#settings button{
+    display: inline-block;	
+	box-sizing: border-box;
+	padding: 0 15px;
+	margin: 0 15px 15px 0;
+	outline: none;
+	border: 1px solid #6c757d; 
+	border-radius: 5px;
+	height: 38px;
+	line-height: 38px;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #000;
+	background-color: #fff;
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation; 
+}
+#settings button:hover{
+    background-color: #24ccff;
+}
+#settings button:active{
+        border-color: #78a2b7 !important;
+        color: #3a728b !important;
+}
+.dark{
+    background-color: #000;
+    color: #fff;
+}
+
+.no-display{
+  display: none;
+}
+#settings{
+    width: 100%;
+    padding: 10px 5px; 
+    font-family: 'Titillium Web', sans-serif;
+}
+#settings button{
+    margin: 0 auto;
+    display: block;
+}
+.toggle{
+    margin: 10px auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.toggle label{
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 7%;
+    cursor: pointer;
+}
+.toggle input{
+    visibility: hidden;
+}
+.toggle__item1 label{
+  border: 1px solid #ff2424;
+}
+.toggle__item2 label{
+    border: 1px solid #24ff62;
+}
+.toggle input:checked + label{
+    background: #5194fa;
+}
+.toggle label:hover{
+    background-color: #24ccff;
+}
+.radio{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    margin: 10px auto;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.radio input{
+    visibility: hidden;
+}
+.radio label{
+    cursor: pointer;
+    border: 1px solid #24ccff;
+    padding: 5px;
+    border-radius: 8%;
+}
+.radio input:checked + label{
+    background: #5194fa;
+}
+.radio label:hover{
+    background-color: #24ccff;
+}
+.range{
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.range label{
+    margin: 0 auto;
+}
+#garland{
+    width: 100%;
+    padding: 10px 5px;
+    cursor: pointer;
+    transition-duration: 1s;
+    margin-bottom: 10px;
+}
+.led{
+    width: 6px;
+    height: 6px;
+    border-radius: 40%;
+    background-color: rgba(186, 186, 186, 0.1); 
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    box-sizing: border-box;
+    display: block;
+}
+.garland__row{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 5px;
+}
+.red{
+    animation-name: glow_red;
+}
+.blue{
+    animation-name: glow_blue;
+}
+.green{
+    animation-name: glow_green;
+}
+@keyframes glow_blue{
+    from{
+        border: 1px solid #c9c9c9;
+        background-color: rgba(186, 186, 186, 0.1); 
+    }
+    25%{
+        border-color:#24ccff;
+    }
+    50%{
+        box-shadow: 0 0 30px #24ccff;
+        background-color: #24ccff;
+        border-style:none;
+        filter: blur(1px);
+    }
+    to{
+        border: 1px solid #c9c9c9;
+        background-color: rgba(186, 186, 186, 0.1); 
+    }
+}
+@keyframes glow_red{
+    from{
+        border: 1px solid #c9c9c9;
+        background-color: rgba(186, 186, 186, 0.1); 
+    }
+    25%{
+        border-color:#ff2424;
+    }
+    50%{
+        box-shadow: 0 0 30px #ff2424;
+        background-color: #ff2424;
+        border-style:none;
+        filter: blur(1px);
+    }
+    to{
+        border: 1px solid #c9c9c9;
+        background-color: rgba(186, 186, 186, 0.1); 
+    }
+}
+@keyframes glow_green{
+    from{
+        border: 1px solid #c9c9c9;
+        background-color: rgba(186, 186, 186, 0.1); 
+    }
+    25%{
+        border-color:#24ff62;
+    }
+    50%{
+        box-shadow: 0 0 30px #24ff62;
+        background-color: #24ff62;
+        border-style:none;
+        filter: blur(1px);
+    }
+    to{
+            border: 1px solid #c9c9c9;
+            background-color: rgba(186, 186, 186, 0.1);
+        }
+}

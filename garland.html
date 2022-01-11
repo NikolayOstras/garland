@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>garland</title>
+    <link rel="stylesheet" href="css/garland.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="garland">
+</div>
+<div id="settings" class="no-display">
+    <div class="radio">
+            <input type="radio" id="radioButton0" name="mode" value="0">
+            <label for="radioButton0" class="label">Mode 1</label>
+            <input type="radio" id="radioButton1" name="mode" value="1">
+            <label for="radioButton1" class="label">Mode 2</label>
+            <input type="radio" id="radioButton2" name="mode" value="2">
+            <label for="radioButton2" class="label">Mode 3</label>
+    </div>
+    <div class="toggle">
+        <span>Dark Mode:</span>
+        <div class="toggle__item1" >
+            <input id="fid-1" type="radio" name="darkmode" value="0">
+		    <label for="fid-1">OFF</label>
+        </div>
+        <div class="toggle__item2" >
+            <input id="fid-2" type="radio" name="darkmode" value="1">
+		    <label for="fid-2">ON</label>
+        </div>
+    </div>
+    <div class="range">
+        <label for="denisty" class="label">Amount</label>
+        <input type="range" class="range" min="0.1" max="0.7" step="0.01" id="denisty">
+        <label for="timer" class="label">Timer</label>
+        <input type="range" class="range" min="200" max="3000" id="timer" value="1000">
+        <label for="size" class="label">Size</label>
+        <input type="range" class="range" min="1" max="10" step="1" id="size" value="1">  
+    </div>
+    <div>
+        <button type="submit" id="saveButton">Save</button>
+    </div>
+</div>
+<div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aliquid ullam amet sequi temporibus eius quia eligendi, nostrum aspernatur maxime illum impedit! Ipsum totam, dolore in architecto eos illum ab.</p>
+</div>
+ <script src="js/garland.js"></script>
+</body>
+</html>
